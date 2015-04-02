@@ -1,3 +1,5 @@
+![Icons](./public/images/digital_goods_icons.png)
+
 # Sample On Demand for Digital Goods Backend
 
 This project serves as a simple backend designed to work with Klarna on Demand for Digital Goods.
