@@ -1,0 +1,14 @@
+<form action="/identification" method="POST" class="klarna-form"
+    data-api-key="<%= API_KEY %>"
+    data-flow="identification"
+    data-locale="en">
+
+    <input type="hidden" name="article_id" value="<%= @article.id %>" />
+</form>
+
+<script>
+  onKlarnaSuccess = function(paid_content){
+    document.getElementById('paid_content').innerHTML = paid_content;
+  }
+</script>
+<script src="<%= script_url %>/js/klarna_on_demand_publishers.js"></script>

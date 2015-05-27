@@ -1,0 +1,17 @@
+<h1><%= @article.title %></a></h1>
+<h2><%= @article.tagline %></h2>
+<img src="<%= @article.image %>" />
+
+<section id="free_content">
+  <%= @article.free_content %>
+</section>
+
+<% if !@user %>
+  <%= erb :identification_form %>
+<% elsif @user.must_subscribe? %>
+  <%= erb :purchase_form %>
+<% end %>
+
+<section id="paid_content">
+  <%= @article.paid_content if @user and @user.can_access_content? %>
+</section>

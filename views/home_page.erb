@@ -1,0 +1,6 @@
+<h5>Top stories</h5>
+<% @articles.each do |article| %>
+  <h3>
+    <a href="/article/<%= article.id %>"><%= article.title %></a>
+  </h3>
+<% end %>

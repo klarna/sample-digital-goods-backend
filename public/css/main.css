@@ -1,0 +1,236 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+@import url(http://fonts.googleapis.com/css?family=Martel:900,200,400);
+
+html {
+  color: #333;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+body {
+  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 5%;
+}
+
+.header-container,
+.main aside {
+  background: #eee;
+}
+
+.footer-container {
+  background: #ccc;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+.main {
+  padding: 30px 0;
+}
+
+h3 {
+  font-family: 'Martel', serif;
+}
+
+article {
+  min-height: 500px;
+}
+
+h5 {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  color: #777;
+}
+
+.main article h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+  font-family: 'Martel', serif;
+  margin: 0;
+  font-weight: 900;
+}
+
+.main article h2 {
+  font-size: 1em;
+  line-height: 1.2em;
+  font-family: 'Martel', serif;
+
+  margin: 5px 0 20px 0;
+  color: #888;
+  font-weight: 100;
+}
+a {
+  color: #33f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.main article img {
+  width: 100%;
+}
+
+.main article section {
+  margin-top: 40px;
+}
+
+section#free_content p:first-line{
+  font-weight: bold;
+}
+
+blockquote {
+  font-family: 'Martel', serif;
+  color: #555;
+  font-size: 1.2em;
+  font-weight: 800;
+  margin-left: -40px;
+
+}
+blockquote:before{
+  content: '“ ';
+  color: #ddd;
+  margin-left: -1em;
+  font-size: 2em;
+
+}
+
+.main article p {
+  font-family: 'Martel', serif;
+  color: #333;
+  text-rendering: optimizelegibility;
+  margin-top: 0;
+}
+
+.main aside {
+  padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+  padding: 20px 0;
+}
+
+.footer-container footer p{
+  font-size: 0.8em;
+  color: #999;
+}
+
+.logo {
+  padding: 15px 0;
+  float: left;
+}
+
+.logo img {
+  opacity: .4;
+  width: 32px;
+}
+
+.avatar{
+  width: 32px;
+  border-radius: 5px;
+}
+.read-count{
+  font-family: 'Martel', serif;
+  line-height: 32px;
+  padding: 15px;
+  display: inline-block;
+  color: #666;
+
+}
+nav {
+  font-family: 'Martel', serif;
+  line-height: 32px;
+  float: right;
+  padding: 15px 0;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+
+/* ============
+    WIDE: Main
+   ============ */
+
+  .main article {
+    float: left;
+    width: 57%;
+  }
+
+  .main aside {
+    float: right;
+    width: 28%;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+  .wrapper {
+    width: 1026px; /* 1140px - 10% for margins */
+    margin: 0 auto;
+  }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
