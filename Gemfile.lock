@@ -50,4 +50,5 @@ DEPENDENCIES
   pry
   rest-client
   sinatra
+  sinatra-contrib
   sinatra-reloader
