@@ -1,7 +1,7 @@
 <form action="/purchase" method="POST" class="klarna-form"
     data-api-key="<%= API_KEY %>"
     data-flow="purchase"
-    data-user-token="<%= @user.token if @user %>"
+    <%=%{data-user-token="#{@user.token}"} if @user %>
     data-amount="99"
     data-currency="SEK"
     data-locale="en">

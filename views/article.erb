@@ -6,10 +6,14 @@
   <%= @article.free_content %>
 </section>
 
-<% if !@user %>
-  <%= erb :identification_form %>
-<% elsif @user.must_subscribe? %>
+<% if @user %>
+  <% if @user.must_subscribe? %>
+    <%= erb :purchase_form %>
+  <% end %>
+<% elsif @article.id == '1' %>
   <%= erb :purchase_form %>
+<% else %>
+  <%= erb :identification_form %>
 <% end %>
 
 <section id="paid_content">

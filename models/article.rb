@@ -3,6 +3,17 @@ class Article
   ARTICLES = [
     {
       id: '1',
+      title: 'Biography of Margaret Thatcher (Purchase only)',
+      tagline: 'The Iron Lady',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Margaret_Thatcher_%281983%29.jpg/330px-Margaret_Thatcher_%281983%29.jpg',
+      summary: 'Margaret Hilda Thatcher, Baroness Thatcher, LG, OM, PC, FRS (née Roberts, 13 October 1925 – 8 April 2013) was the Prime Minister of the United Kingdom from 1979 to 1990 and the Leader of the Conservative Party from 1975 to 1990. She was the longest-serving British Prime Minister of the 20th century and is the only woman to have held the office. A Soviet journalist called her the "Iron Lady", a nickname that became associated with her uncompromising politics and leadership style. As Prime Minister, she implemented policies that have come to be known as Thatcherism.',
+      free_content: %(<p>Originally a research chemist before becoming a barrister, Thatcher was elected Member of Parliament (MP) for Finchley in 1959. Edward Heath appointed her Secretary of State for Education and Science in his 1970 government. In 1975, Thatcher defeated Heath in the Conservative Party leadership election to become Leader of the Opposition and became the first woman to lead a major political party in the United Kingdom. She became Prime Minister after winning the 1979 general election.</p>),
+      paid_content: %(
+        <p>On moving into 10 Downing Street, Thatcher introduced a series of political and economic initiatives intended to reverse high unemployment and Britain's struggles in the wake of the Winter of Discontent and an ongoing recession.[nb 1] Her political philosophy and economic policies emphasised deregulation (particularly of the financial sector), flexible labour markets, the privatisation of state-owned companies, and reducing the power and influence of trade unions. Thatcher's popularity during her first years in office waned amid recession and high unemployment until the 1982 Falklands War brought a resurgence of support, resulting in her re-election in 1983.
+        Thatcher was re-elected for a third term in 1987. During this period her support for a Community Charge (referred to as the "poll tax") was widely unpopular and her views on the European Community were not shared by others in her Cabinet. She resigned as Prime Minister and party leader in November 1990, after Michael Heseltine launched a challenge to her leadership. After retiring from the Commons in 1992, she was given a life peerage as Baroness Thatcher, of Kesteven in the county of Lincolnshire, which entitled her to sit in the House of Lords. After a series of small strokes in 2002, she was advised to withdraw from public speaking, and in 2013 she died of another stroke in London at the age of 87.     </p> )
+    },
+    {
+      id: '2',
       title: 'Gutenberg creates an innovative printing system',
       tagline: 'The new system promises a revolution on how people consume content',
       image: 'http://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Metal_movable_type.jpg/1920px-Metal_movable_type.jpg',
@@ -23,7 +34,7 @@ class Article
       )
     },
     {
-      id: '2',
+      id: '3',
       title: 'Tim Berners-Lee creates the World Wide Web',
       tagline: 'The new system allows people to communicate worldwide',
       image: 'http://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/First_Web_Server.jpg/1600px-First_Web_Server.jpg',
@@ -42,7 +53,7 @@ class Article
       )
     },
     {
-      id: '3',
+      id: '4',
       premium: true,
       title: 'A thin, plant-based material for writing, called "paper" appears in China',
       tagline: 'The innovation is thinner and better than the papyrus',

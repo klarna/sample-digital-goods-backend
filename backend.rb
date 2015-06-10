@@ -34,7 +34,7 @@ class Backend < Sinatra::Base
   # - Accumulates current user's read articles count
   # - Returns the paid content part of the article to be displayed by the onKlarnaSuccess method
   post '/identification' do
-    @user = User.create(session, params[:userToken], params[:email])
+    @user = User.create(session, params[:userToken], 'user@email.com')
     article = Article.find(params[:article_id])
     @user.read!(article)
 
@@ -46,6 +46,8 @@ class Backend < Sinatra::Base
   # - If it succeeds, subscribe the user and returns the paid content to be displayed by the onKlarnaSuccess method
   # - If it fails returns the data, so the iframe knows how to handle it
   post '/purchase' do
+    @user = User.create(session, params[:userToken], 'user@email.com') unless @user
+
     purchase = Klarna::Purchase.new(
       user_token: @user.token,
       reference:  'subscription',
