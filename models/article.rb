@@ -4,6 +4,7 @@ class Article
     {
       id: '1',
       title: 'Kitesurfing (Purchase only)',
+      purchase_only: true,
       tagline: 'Kiteboarding is a surface water sport combining aspects of wakeboarding, windsurfing, surfing, paragliding, and gymnastics into one extreme sport',
       image: 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Boracay_kitesurfing.jpg/330px-Boracay_kitesurfing.jpg',
       summary: 'Kiteboarding is a surface water sport combining aspects of wakeboarding, windsurfing, surfing, paragliding, and gymnastics into one extreme sport. A kiteboarder harnesses the power of the wind with a large controllable power kite to be propelled across the water on a kiteboard similar to a wakeboard or a small surfboard, with or without footstraps or bindings.Kitesurfing is a style of kiteboarding specific to wave riding, which utilizes standard surfboards or boards shaped specifically for the purpose.There are different styles of kiteboarding, including freestyle, freeride, downwinders, speed, course racing, wakestyle, jumping and kitesurfing in the waves.[1] In 2012, the number of kitesurfers was estimated by the ISAF and IKA at 1.5 million persons worldwide [2] (pending review). The global market for kite gear sales is worth US$321 million.[3]',
@@ -93,11 +94,12 @@ class Article
     all.find{ |article| article.id == id }
   end
 
-  attr_reader :id, :premium, :title, :tagline, :image, :summary, :free_content, :paid_content
-  def initialize(id:, premium: false, title:, tagline: , image:, summary:, free_content:, paid_content:)
+  attr_reader :id, :premium, :title, :purchase_only, :tagline, :image, :summary, :free_content, :paid_content
+  def initialize(id:, premium: false, title:, purchase_only: false, tagline: , image:, summary:, free_content:, paid_content:)
     @id = id
     @premium = premium
     @title = title
+    @purchase_only = purchase_only
     @tagline = tagline
     @image = image
     @summary = summary

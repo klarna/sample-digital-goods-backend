@@ -62,6 +62,7 @@ class Backend < Sinatra::Base
       article = Article.find(params[:article_id])
       return json data: article.paid_content
     else
+      status 500
       return json klarna_response: authorization_response.data
     end
   end
