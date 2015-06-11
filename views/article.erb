@@ -10,7 +10,7 @@
   <% if @user.must_subscribe? %>
     <%= erb :purchase_form %>
   <% end %>
-<% elsif @article.id == '1' %>
+<% elsif @article.purchase_only %>
   <%= erb :purchase_form %>
 <% else %>
   <%= erb :identification_form %>
