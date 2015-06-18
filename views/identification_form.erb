@@ -1,7 +1,7 @@
 <form action="/identification" method="POST" class="klarna-form"
     data-api-key="<%= API_KEY %>"
     data-flow="identification"
-    data-locale="en">
+    data-locale="<%= locale %>">
 
     <input type="hidden" name="article_id" value="<%= @article.id %>" />
 </form>

@@ -4,7 +4,7 @@
     <%=%{data-user-token="#{@user.token}"} if @user %>
     data-amount="99"
     data-currency="SEK"
-    data-locale="en">
+    data-locale="<%= locale %>">
 
     <input type="hidden" name="article_id" value="<%= @article.id %>" />
 </form>

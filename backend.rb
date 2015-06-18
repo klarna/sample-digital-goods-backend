@@ -73,4 +73,7 @@ class Backend < Sinatra::Base
     redirect back
   end
 
+  def locale
+    params[:locale] ? params[:locale] : "en"
+  end
 end
