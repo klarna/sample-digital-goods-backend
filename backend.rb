@@ -49,11 +49,12 @@ class Backend < Sinatra::Base
     @user = User.create(session, params[:userToken], 'user@email.com') unless @user
 
     purchase = Klarna::Purchase.new(
-      user_token: @user.token,
-      reference:  'subscription',
-      name:       'Monthly subscription',
-      amount:     99,
-      tax:        6
+      user_token:    @user.token,
+      reference:     'subscription',
+      name:          'Monthly subscription',
+      amount:        99,
+      tax:           6,
+      origin_proof:  params[:origin_proof]
     )
 
     authorization_response = purchase.authorize!
@@ -74,6 +75,6 @@ class Backend < Sinatra::Base
   end
 
   def locale
-    params[:locale] ? params[:locale] : "en"
+    params[:locale] ? params[:locale] : "sv"
   end
 end

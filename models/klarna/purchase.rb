@@ -18,12 +18,13 @@ module Klarna
       end
     end
 
-    def initialize(user_token:, reference:, name:, amount:, tax:)
+    def initialize(user_token:, reference:, name:, amount:, tax:, origin_proof:)
       @user_token = user_token
       @reference = reference
       @name = name
       @amount = amount
       @tax = tax
+      @origin_proof = origin_proof
     end
 
     def authorize!
@@ -33,7 +34,8 @@ module Klarna
         name:             @name,
         order_amount:     @amount,
         order_tax_amount: @tax,
-        capture:          "false"
+        capture:          "false",
+        origin_proof:     @origin_proof
       }
 
       url = "https://inapp.playground.klarna.com/api/v1/users/#{@user_token}/orders"
