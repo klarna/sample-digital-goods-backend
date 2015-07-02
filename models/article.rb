@@ -6,7 +6,7 @@ class Article
       title: 'Kitesurfing (Purchase only)',
       purchase_only: true,
       tagline: 'Kiteboarding is a surface water sport combining aspects of wakeboarding, windsurfing, surfing, paragliding, and gymnastics into one extreme sport',
-      image: 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Boracay_kitesurfing.jpg/330px-Boracay_kitesurfing.jpg',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Boracay_kitesurfing.jpg/330px-Boracay_kitesurfing.jpg',
       summary: 'Kiteboarding is a surface water sport combining aspects of wakeboarding, windsurfing, surfing, paragliding, and gymnastics into one extreme sport. A kiteboarder harnesses the power of the wind with a large controllable power kite to be propelled across the water on a kiteboard similar to a wakeboard or a small surfboard, with or without footstraps or bindings.Kitesurfing is a style of kiteboarding specific to wave riding, which utilizes standard surfboards or boards shaped specifically for the purpose.There are different styles of kiteboarding, including freestyle, freeride, downwinders, speed, course racing, wakestyle, jumping and kitesurfing in the waves.[1] In 2012, the number of kitesurfers was estimated by the ISAF and IKA at 1.5 million persons worldwide [2] (pending review). The global market for kite gear sales is worth US$321 million.[3]',
       free_content: %(<p>In the 1800s, George Pocock used kites of increased size to propel carts on land and ships on the water, using a four-line control system—the same system in common use today. Both carts and boats were able to turn and sail upwind. The kites could be flown for sustained periods.[4] The intention was to establish kitepower as an alternative to horsepower, partly to avoid the hated "horse tax" that was levied at that time.[5] In 1903, aviation pioneer Samuel Cody developed "man-lifting kites" and succeeded in crossing the English Channel in a small collapsible canvas boat powered by a kite[6]</p>),
       paid_content: %(
@@ -27,11 +27,11 @@ class Article
       id: '2',
       title: 'Gutenberg creates an innovative printing system',
       tagline: 'The new system promises a revolution on how people consume content',
-      image: 'http://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Metal_movable_type.jpg/1920px-Metal_movable_type.jpg',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Metal_movable_type.jpg/1920px-Metal_movable_type.jpg',
       summary: "The printing press was invented in the Holy Roman Empire by Johannes Gutenberg, around 1440. Gutenberg, a goldsmith by profession, devised a hand mould to create metal movable type, and adapted screw presses and other existing technologies, to create a printing system.",
       free_content: "<p>The printing press was invented in the Holy Roman Empire by Johannes Gutenberg, around 1440. Gutenberg, a goldsmith by profession, devised a hand mould to create metal movable type, and adapted screw presses and other existing technologies, to create a printing system. The mechanization of bookmaking led to the first mass production of books in Europe. A single Renaissance printing press could produce 3,600 pages per workday, compared to about 2,000 by typographic block-printing prevalent in East Asia, and a few by hand-copying. Books of bestselling authors like Luther or Erasmus were sold by the hundreds of thousands in their lifetime.</p>",
       paid_content: %(
-        <img style="width: 44%; float: left; margin-right: 20px;" src="http://upload.wikimedia.org/wikipedia/commons/f/f8/Printer_in_1568-ce.png" />
+        <img style="width: 44%; float: left; margin-right: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Printer_in_1568-ce.png" />
         <p>Within several decades, the printing press spread to over two hundred cities in a dozen European countries. By 1500, printing presses in operation throughout Western Europe had produced more than twenty million volumes. In the 16th century, with presses spreading further afield, their output rose to an estimated 150 to 200 million copies. The operation of a printing press became synonymous with the enterprise of printing, and lent its name to a new branch of media, the press. In 1620, the English philosopher Francis Bacon wrote of printing as one of three inventions that had changed the world.</p>
         <p>In the 19th century, the replacement of the hand-operated Gutenberg-style press by steam-powered rotary presses allowed printing on an industrial scale, while Western-style printing was adopted all over the world, becoming practically the sole medium for modern bulk printing, today typically using offset printing techniques.</p>
         <blockquote>The concept of movable type was not new in the 15th century; movable type printing had been invented in China during the Song dynasty</blockquote>
@@ -48,11 +48,11 @@ class Article
       id: '3',
       title: 'Tim Berners-Lee creates the World Wide Web',
       tagline: 'The new system allows people to communicate worldwide',
-      image: 'http://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/First_Web_Server.jpg/1600px-First_Web_Server.jpg',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/First_Web_Server.jpg/1600px-First_Web_Server.jpg',
       summary: 'In the 1980s, the work of Tim Berners-Lee in the United Kingdom, on the World Wide Web, theorised the fact that protocols link hypertext documents into a working system, marking the beginning the modern Internet.',
       free_content: "<p>The history of the Internet begins with the development of electronic computers in the 1950s. Initial concepts of packet networking originated in several computer science laboratories in the United States, Great Britain, and France. The US Department of Defense awarded contracts as early as the 1960s for packet network systems, including the development of the ARPANET (which would become the first network to use the Internet Protocol.)",
       paid_content: %(
-        <img style="width: 44%; float: left; margin-right: 20px;" src="http://blog.iese.edu/baker/files/2014/06/976719_0ed45ca20d.jpg" />
+        <img style="width: 44%; float: left; margin-right: 20px;" src="https://blog.iese.edu/baker/files/2014/06/976719_0ed45ca20d.jpg" />
         <p>The first message was sent over the ARPANET from computer science Professor Leonard Kleinrock's laboratory at University of California, Los Angeles (UCLA) to the second network node at Stanford Research Institute (SRI).</p>
         <p>Packet switching networks such as ARPANET, Mark I at NPL in the UK, CYCLADES, Merit Network, Tymnet, and Telenet, were developed in the late 1960s and early 1970s using a variety of communications protocols. Donald Davies was the first to put theory into practice by designing a packet-switched network at the National Physics Laboratory in the UK, the first of its kind in the world and the cornerstone for UK research for almost two decades. Following, ARPANET further led to the development of protocols for internetworking, in which multiple separate networks could be joined into a network of networks.</p>
         <blockquote>Since the mid-1990s, the Internet has had a revolutionary impact on culture and commerce, including the rise of near-instant communication by electronic mail</blockquote>
@@ -68,14 +68,14 @@ class Article
       premium: true,
       title: 'A thin, plant-based material for writing, called "paper" appears in China',
       tagline: 'The innovation is thinner and better than the papyrus',
-      image: 'http://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Paperbook%2B256.jpg/934px-Paperbook%2B256.jpg',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Paperbook%2B256.jpg/934px-Paperbook%2B256.jpg',
 
       summary: "Paper was invented in ancient China during the Han dynasty (206 BC – 220 AD) and spread slowly to the west via the Silk Road. Papermaking and manufacturing in Europe was started by Muslims living on the Iberian Peninsula, (today's Portugal and Spain) and Sicily in the 10th century, and slowly spread to Italy and Southern France reaching Germany by 1400.",
       free_content: %(
         <p>Paper was invented in ancient China during the Han dynasty (206 BC – 220 AD) and spread slowly to the west via the Silk Road. Papermaking and manufacturing in Europe was started by Muslims living on the Iberian Peninsula, (today's Portugal and Spain) and Sicily in the 10th century, and slowly spread to Italy and Southern France reaching Germany by 1400. Earlier, other paper-like materials were in use including papyrus, parchment, palm leaves and vellum, but all of these were derived from raw materials which were expensive or in limited supply, or required extensive hand-processing to produce a satisfactory finish. Paper, being made from wood or rags, could be produced anywhere, and once large scale production techniques had been developed it could be manufactured in almost any quantity at moderate cost.</p>
       ),
       paid_content: %(
-        <img style="width: 44%; float: left; margin-right: 20px;" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Jingangjing.jpg/1599px-Jingangjing.jpg" />
+        <img style="width: 44%; float: left; margin-right: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Jingangjing.jpg/1599px-Jingangjing.jpg" />
         <p>In medieval Europe, the hitherto handcraft of papermaking was mechanized by the use of waterpower, the first water papermill in the Iberian Peninsula having been built in the Portuguese city of Leiria in 1411, and other processes. The rapid expansion of European paper production was truly enhanced by the invention of the printing press and the beginning of the Printing Revolution in the 15th century.</p>
         <blockquote>Papermaking and manufacturing in Europe was started by Muslims living on the Iberian Peninsula, (today's Portugal and Spain) and Sicily in the 10th century</blockquote>
         <p>The word "paper" is etymologically derived from papyros, Ancient Greek for the Cyperus papyrus plant. Papyrus is a thick, paper-like material produced from the pith of the Cyperus papyrus plant which was used in ancient Egypt and other Mediterranean cultures for writing long before the making of paper in China. Papyrus however are plants dried and woven, while paper is manufactured from fibers whose properties have been changed by maceration or disintegration.</p>
