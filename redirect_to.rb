@@ -1,10 +1,7 @@
 class RedirectTo < Sinatra::Base
   include Helpers
 
-  # Handle JSONP (GET) requests to '/identification'
-  # - Creates a user based on the userToken provided by Klarna
-  # - Accumulates current user's read articles count
-  # - Returns the paid content part of the article wrapped in the given callback function
+  # Make purches and redirect to thank you page
   post '/purchase' do
     @user = User.create(session, params[:userToken], 'user@email.com') unless @user
 
