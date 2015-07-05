@@ -5,6 +5,8 @@ GEM
     coderay (1.1.0)
     domain_name (0.5.24)
       unf (>= 0.0.5, < 1.0.0)
+    emk-sinatra-url-for (0.2.1)
+      sinatra (>= 0.9.1.1)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
     method_source (0.8.2)
@@ -47,6 +49,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  emk-sinatra-url-for
   pry
   rest-client
   sinatra

@@ -9,6 +9,7 @@ end
 
 require_relative './helpers.rb'
 require_relative './jsonp.rb'
+require_relative './redirect_to.rb'
 require_relative './backend.rb'
 
 $stdout.sync = true
@@ -23,6 +24,7 @@ class Backend < Sinatra::Base
   end
 
   use JSONP
+  use RedirectTo
 end
 
 run Backend.new
