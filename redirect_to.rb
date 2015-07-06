@@ -2,7 +2,7 @@ class RedirectTo < Sinatra::Base
   include Helpers
 
   # Make purches and redirect to thank you page
-  post '/purchase' do
+  post '/purchase_and_redirect' do
     @user = User.create(session, params[:userToken], 'user@email.com') unless @user
 
     purchase = Klarna::Purchase.new(
@@ -32,6 +32,7 @@ class RedirectTo < Sinatra::Base
     @articles = Article.all
     @article = Article.find('1')
     @user.read!(@article) if @user
+    @action = '/purchase_and_redirect'
 
     @jsonp = true
     erb :article
