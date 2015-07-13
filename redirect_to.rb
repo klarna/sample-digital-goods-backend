@@ -19,7 +19,7 @@ class RedirectTo < Sinatra::Base
       @user.subscribe!
 
       user_token, order_reference = extract_user_token_and_order_reference(authorization_response.data[1...-1])
-      return json redirect_to: "/thank_you?user_token=#{user_token}&order_id=#{order_id}"
+      return json redirect_to: "/thank_you?user_token=#{user_token}&order_id=#{order_reference}"
     else
       status 500
       return json klarna_response: authorization_response.data
