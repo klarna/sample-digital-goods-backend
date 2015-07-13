@@ -17,7 +17,9 @@ class RedirectTo < Sinatra::Base
     authorization_response = purchase.authorize!
     if authorization_response.success?
       @user.subscribe!
-      return json redirect_to: "/thank_you"
+
+      user_token, order_reference = extract_user_token_and_order_reference(authorization_response.data[1...-1])
+      return json redirect_to: "/thank_you?user_token=#{user_token}&order_reference=#{order_reference}"
     else
       status 500
       return json klarna_response: authorization_response.data
@@ -25,6 +27,8 @@ class RedirectTo < Sinatra::Base
   end
 
   get '/thank_you' do
+    @user_token = params[:user_token]
+    @order_reference = params[:order_reference]
     erb :thank_you
   end
 
@@ -36,5 +40,11 @@ class RedirectTo < Sinatra::Base
 
     @jsonp = true
     erb :article
+  end
+
+  private
+
+  def extract_user_token_and_order_reference(url_string)
+    url_string.match(/.+users\/(.+)\/orders\/(.+)/)[1..2]
   end
 end
