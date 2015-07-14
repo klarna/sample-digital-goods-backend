@@ -6,7 +6,7 @@ class JSONP < Sinatra::Base
   # - Accumulates current user's read articles count
   # - Returns the paid content part of the article wrapped in the given callback function
   get '/identification' do
-    callback = params.delete('callback')
+    callback = params.delete('klarnaCallback')
 
     @user = User.create(session, params[:userToken], 'user@email.com')
     article = Article.find(params[:article_id])
