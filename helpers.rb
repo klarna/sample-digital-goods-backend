@@ -1,6 +1,6 @@
 module Helpers
   def script_url
-    ENV['SCRIPT_URL'] || "http://server.dev"
+    ENV['SCRIPT_URL'] || "https://ondemand-dg.playground.klarna.com"
   end
 
   def locale
