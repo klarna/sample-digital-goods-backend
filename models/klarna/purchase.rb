@@ -38,7 +38,7 @@ module Klarna
         origin_proof:     @origin_proof
       }
 
-      od_host = ENV['ON_DEMAND_HOST'] || inapp.playground.klarna.com
+      od_host = ENV['ON_DEMAND_HOST'] || 'inapp.playground.klarna.com'
       url =  "https://#{od_host}/api/v1/users/#{@user_token}/orders"
 
       resource = RestClient::Resource.new url, API_KEY, API_SECRET
