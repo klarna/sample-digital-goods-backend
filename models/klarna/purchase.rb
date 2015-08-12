@@ -42,7 +42,7 @@ module Klarna
       order_url =  "#{od_url}/api/v1/users/#{@user_token}/orders"
 
       resource_params = [order_url]
-      resource_params + [API_KEY, API_SECRET] if order_url.match(/^https/)
+      resource_params += [API_KEY, API_SECRET] if order_url.match(/^https/)
 
       resource = RestClient::Resource.new(*resource_params)
       resource.post(order_params) do |response|
