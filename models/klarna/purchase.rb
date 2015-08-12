@@ -38,10 +38,13 @@ module Klarna
         origin_proof:     @origin_proof
       }
 
-      od_host = ENV['ON_DEMAND_HOST'] || 'inapp.playground.klarna.com'
-      url =  "https://#{od_host}/api/v1/users/#{@user_token}/orders"
+      od_url = ENV['ON_DEMAND_URL'] || 'https://inapp.playground.klarna.com'
+      order_url =  "#{od_url}/api/v1/users/#{@user_token}/orders"
 
-      resource = RestClient::Resource.new url, API_KEY, API_SECRET
+      resource_params = [order_url]
+      resource_params + [API_KEY, API_SECRET] if order_url.match(/^https/)
+
+      resource = RestClient::Resource.new(*resource_params)
       resource.post(order_params) do |response|
         Response.new(response)
       end
