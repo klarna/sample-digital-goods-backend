@@ -1,11 +1,11 @@
 class JSONP < Sinatra::Base
   include Helpers
 
-  # Handle JSONP (GET) requests to '/identification'
+  # Handle JSONP (GET) requests to '/registration'
   # - Creates a user based on the userToken provided by Klarna
   # - Accumulates current user's read articles count
   # - Returns the paid content part of the article wrapped in the given callback function
-  get '/identification' do
+  get '/registration' do
     callback = params.delete('klarnaCallback')
 
     @user = User.create(session, params[:userToken], 'user@email.com')
