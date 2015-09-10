@@ -1,8 +1,9 @@
-<form action="/identification" method="POST" class="klarna-form"
+<form action="/registration" method="POST" class="klarna-form"
     data-api-key="<%= API_KEY %>"
-    data-flow="identification"
+    data-flow="registration"
     data-jsonp="<%= @jsonp %>"
-    data-locale="<%= locale %>">
+    data-locale="<%= locale %>"
+    data-in_app="<%= in_app %>">
 
     <input type="hidden" name="article_id" value="<%= @article.id %>" />
 </form>

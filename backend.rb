@@ -29,11 +29,11 @@ class Backend < Sinatra::Base
     erb :article
   end
 
-  # Handle POST requests to '/identification'
+  # Handle POST requests to '/registration'
   # - Creates a user based on the userToken provided by Klarna
   # - Accumulates current user's read articles count
   # - Returns the paid content part of the article to be displayed by the onKlarnaSuccess method
-  post '/identification' do
+  post '/registration' do
     @user = User.create(session, params[:userToken], 'user@email.com')
     article = Article.find(params[:article_id])
     @user.read!(article)
