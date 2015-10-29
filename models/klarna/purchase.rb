@@ -2,22 +2,6 @@ require "rest-client"
 
 module Klarna
   class Purchase
-    class Response
-      attr_reader :code, :body
-      def initialize(response)
-        @code = response.code
-        @body = response.body
-      end
-
-      def success?
-        code == 201
-      end
-
-      def data
-        success? ? body : JSON.parse(body)
-      end
-    end
-
     def initialize(user_token:, reference:, name:, amount:, tax:, origin_proof:)
       @user_token = user_token
       @reference = reference
@@ -27,7 +11,7 @@ module Klarna
       @origin_proof = origin_proof
     end
 
-    def authorize!
+    def order!
       order_params = {
         currency:         "SEK",
         reference:        @reference,
@@ -45,8 +29,10 @@ module Klarna
       resource_params += [API_KEY, API_SECRET] if order_url.match(/^https/)
 
       resource = RestClient::Resource.new(*resource_params)
+
       resource.post(order_params) do |response|
-        Response.new(response)
+        success = response.code.to_s =~ /^2/
+        [success, success ? response.body : JSON.parse(response.body), response.code]
       end
     end
   end

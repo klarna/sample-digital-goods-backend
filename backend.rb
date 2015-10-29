@@ -47,7 +47,6 @@ class Backend < Sinatra::Base
   # - If it fails returns the data, so the iframe knows how to handle it
   post '/purchase' do
     @user = User.create(session, params[:userToken], 'user@email.com') unless @user
-
     purchase = Klarna::Purchase.new(
       user_token:    @user.token,
       reference:     'subscription',
@@ -57,14 +56,13 @@ class Backend < Sinatra::Base
       origin_proof:  params[:origin_proof]
     )
 
-    authorization_response = purchase.authorize!
-    if authorization_response.success?
+    success, response_data, response_code = purchase.order!
+    if success
       @user.subscribe!
       article = Article.find(params[:article_id])
       return json data: article.paid_content
     else
-      status 500
-      return json klarna_response: authorization_response.data
+      status response_code and return json data: {}, klarna_response: response_data
     end
   end
 
