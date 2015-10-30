@@ -1,5 +1,5 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-@import url(https://fonts.googleapis.com/css?family=Martel:900,200,400);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 html {
   color: #333;
@@ -36,7 +36,7 @@ video {
 }
 
 body {
-  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+  font: 16px/26px Open Sans, Arial;
 }
 
 .wrapper {
@@ -46,7 +46,11 @@ body {
 
 .header-container,
 .main aside {
-  background: #eee;
+  background: #3c3c3e;
+}
+
+.header-container header {
+  height: 64px;
 }
 
 .footer-container {
@@ -155,9 +159,16 @@ blockquote:before{
   float: left;
 }
 
-.logo img {
-  opacity: .4;
-  width: 32px;
+.sign-in-button {
+  padding: 2px 20px;
+  float: right;
+  color: white;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 30px;
+  border: medium solid #4fe3c1;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .avatar{
@@ -206,18 +217,6 @@ nav {
   .main aside {
     float: right;
     width: 28%;
-  }
-}
-
-@media only screen and (min-width: 1140px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-
-  .wrapper {
-    width: 1026px; /* 1140px - 10% for margins */
-    margin: 0 auto;
   }
 }
 
