@@ -49,8 +49,39 @@ body {
   background: #3c3c3e;
 }
 
-.header-container header {
+.top-header {
   height: 64px;
+}
+
+.navigation-container {
+  background: #4fe3c1;
+  height: 44pxl
+}
+
+.navigation-container ul {
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.navigation-container ul li {
+  display: inline-block;
+  margin: 0 18px;
+}
+
+.navigation-container ul li:first-of-type {
+  margin-left: 0;
+}
+
+.navigation-container ul li.selected {
+  border-bottom: thick solid white;
+  padding-bottom: 3px;
+}
+
+.navigation-container ul li a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 .footer-container {
