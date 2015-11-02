@@ -55,13 +55,17 @@ body {
 
 .navigation-container {
   background: #4fe3c1;
-  height: 44pxl
+}
+
+.navigation-container > div {
+  height: 43px;
 }
 
 .navigation-container ul {
   padding: 0;
   margin-bottom: 0;
   margin-top: 8px;
+  float: left;
 }
 
 .navigation-container ul li {
@@ -201,6 +205,17 @@ blockquote:before{
   top: 50%;
   transform: translateY(-50%);
 }
+
+.search-decoy {
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background: red;
+  width: 100px;
+  height: 10px;
+}
+
 
 .avatar{
   width: 32px;
