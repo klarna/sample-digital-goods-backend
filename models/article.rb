@@ -5,7 +5,7 @@ class Article
       id: '1',
       title: 'Winter is Coming Time to Go Hiking',
       summary: 'Kiteboarding is a surface water sport combining aspects of wakeboarding, windsurfing, surfing, paragliding, and gymnastics into one extreme sport',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Boracay_kitesurfing.jpg/330px-Boracay_kitesurfing.jpg',
+      image: 'url(\'/images/take_a_hike.jpg\')',
       intro: 'Kiteboarding is a surface water sport combining aspects of wakeboarding, windsurfing, surfing, paragliding, and gymnastics into one extreme sport. A kiteboarder harnesses the power of the wind with a large controllable power kite to be propelled across the water on a kiteboard similar to a wakeboard or a small surfboard, with or without footstraps or bindings.Kitesurfing is a style of kiteboarding specific to wave riding, which utilizes standard surfboards or boards shaped specifically for the purpose.There are different styles of kiteboarding, including freestyle, freeride, downwinders, speed, course racing, wakestyle, jumping and kitesurfing in the waves.[1] In 2012, the number of kitesurfers was estimated by the ISAF and IKA at 1.5 million persons worldwide [2] (pending review). The global market for kite gear sales is worth US$321 million.[3]',
       author: 'Mister MacManus',
       likes: 1759,
@@ -27,10 +27,13 @@ class Article
     },
     {
       id: '2',
-      title: 'I am a different article',
+      title: 'It\'s Not a Lake, It\'s an Ocean',
       summary: 'Kiteboarding is a surface water sport combining aspects of wakeboarding, windsurfing, surfing, paragliding, and gymnastics into one extreme sport',
       image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Boracay_kitesurfing.jpg/330px-Boracay_kitesurfing.jpg',
       intro: 'Kiteboarding is a surface water sport combining aspects of wakeboarding, windsurfing, surfing, paragliding, and gymnastics into one extreme sport. A kiteboarder harnesses the power of the wind with a large controllable power kite to be propelled across the water on a kiteboard similar to a wakeboard or a small surfboard, with or without footstraps or bindings.Kitesurfing is a style of kiteboarding specific to wave riding, which utilizes standard surfboards or boards shaped specifically for the purpose.There are different styles of kiteboarding, including freestyle, freeride, downwinders, speed, course racing, wakestyle, jumping and kitesurfing in the waves.[1] In 2012, the number of kitesurfers was estimated by the ISAF and IKA at 1.5 million persons worldwide [2] (pending review). The global market for kite gear sales is worth US$321 million.[3]',
+      author: 'Alan Wake',
+      likes: 837,
+      comments: 666,
       free_content: %(<p>In the 1800s, George Pocock used kites of increased size to propel carts on land and ships on the water, using a four-line control system—the same system in common use today. Both carts and boats were able to turn and sail upwind. The kites could be flown for sustained periods.[4] The intention was to establish kitepower as an alternative to horsepower, partly to avoid the hated "horse tax" that was levied at that time.[5] In 1903, aviation pioneer Samuel Cody developed "man-lifting kites" and succeeded in crossing the English Channel in a small collapsible canvas boat powered by a kite[6]</p>),
       paid_content: %(
         <p>In the late 1970s, the development of Kevlar then Spectra flying lines and more controllable kites with improved efficiency contributed to practical kite traction. In 1978, Ian Day's "FlexiFoil" kite-powered Tornado catamaran exceeded 40 km/h.
@@ -57,6 +60,7 @@ class Article
   end
 
   attr_reader :id, :title, :summary, :image, :intro, :author, :likes, :comments, :free_content, :paid_content
+
   def initialize(id:, title:, summary:, image:, intro:, author:, likes:, comments:, free_content:, paid_content:)
     @id = id
     @title = title

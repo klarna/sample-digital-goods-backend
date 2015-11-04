@@ -1,21 +1,18 @@
-<h1><%= @article.title %></h1>
-<h2><%= @article.tagline %></h2>
-<img src="<%= @article.image %>" />
+<div id="title" style="background: <%= @article.image %>;">
+  <h1><%= @article.title %></h1>
+</div>
 
+<section id="summary">
+  <p><%= @article.summary %></p>
+</section>
 <section id="free_content">
   <%= @article.free_content %>
 </section>
 
-<% if @user %>
-  <% if @user.must_subscribe? %>
-    <%= erb :purchase_form %>
-  <% end %>
-<% elsif @article.purchase_only %>
-  <%= erb :purchase_form %>
+<% if @user && @user.can_access_content %>
+  <section id="paid_content">
+    <%= @article.paid_content %>
+  </section>
 <% else %>
-  <%= erb :registration_form %>
+  <%= erb :purchase_form %>
 <% end %>
-
-<section id="paid_content">
-  <%= @article.paid_content if @user and @user.can_access_content? %>
-</section>
