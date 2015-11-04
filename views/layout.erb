@@ -43,24 +43,10 @@
     </div>
 
     <div class="main-container">
-      <div class="main wrapper clearfix">
-        <article>
-          <%= yield %>
-        </article>
-
-        <% if @article %>
-          <aside>
-              <p>Other articles:</p>
-              <% @articles.each do |article| %>
-                <div>
-                  <a href="/article/<%= article.id %>"><%= article.title %></a>
-                </div>
-              <% end %>
-          </aside>
-        <% end %>
-
-      </div> <!-- #main -->
-    </div> <!-- #main-container -->
+      <article>
+        <%= yield %>
+      </article>
+    </div>
 
     <div class="footer-container">
       <footer class="wrapper">
