@@ -198,8 +198,9 @@ blockquote:before{
   padding: 2px 20px;
   float: right;
   color: white;
-  -webkit-border-radius: 100px;
+  -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
+  border-radius: 30px;
   border: medium solid #4fe3c1;
   position: relative;
   top: 50%;
@@ -211,11 +212,28 @@ blockquote:before{
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  background: red;
-  width: 100px;
-  height: 10px;
 }
 
+.search-decoy input {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  border-style: none;
+  background-color: #46cbae;
+  width: 260px;
+  padding-left: 6px;
+  padding-right: 28px;
+  color: white;
+  font-size: 12px;
+  line-height: 23px;
+}
+
+.search-decoy:after {
+  content: url('/images/search.png');
+  position: absolute;
+  right: 6px;
+  top: 3px;
+}
 
 .avatar{
   width: 32px;
