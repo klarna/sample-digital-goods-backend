@@ -88,10 +88,6 @@ body {
   text-decoration: none;
 }
 
-.footer-container {
-  background: #ccc;
-}
-
 /* ==============
     MOBILE: Main
    ============== */
@@ -187,6 +183,7 @@ blockquote:before{
 .footer-container footer p{
   font-size: 0.8em;
   color: #999;
+  text-align: center;
 }
 
 .logo {
