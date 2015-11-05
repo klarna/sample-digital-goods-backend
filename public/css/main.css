@@ -195,8 +195,13 @@ blockquote:before{
   padding: 20px 10px;
 }
 
+.main-container > article #sub-title .darkened {
+  margin-top: 50px;
+}
+
 .main-container > article #author {
   float: left;
+  color: white;
 }
 
 .main-container > article #author img {
@@ -206,7 +211,6 @@ blockquote:before{
 
 .main-container > article #author span {
   display: inline-block;
-  color: white;
 }
 
 .main-container > article #author #date {
@@ -215,8 +219,25 @@ blockquote:before{
 
 .main-container > article #social {
   float: right;
-  width: 10px;
-  height: 10px;
+  color: white;
+}
+
+.main-container > article #social span:first-of-type {
+  margin-right: 20px;
+}
+
+.main-container > article #social .likes:after {
+  content: url('/images/like.png');
+  margin-left: 8px;
+  position: relative;
+  top: 4px;
+}
+
+.main-container > article #social .comments:after {
+  content: url('/images/comment.png');
+  margin-left: 8px;
+  position: relative;
+  top: 4px;
 }
 
 /* ==========================================================================
