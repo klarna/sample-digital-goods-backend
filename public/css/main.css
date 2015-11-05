@@ -167,7 +167,8 @@ blockquote:before{
 .main-container > article #title {
   width: 100%;
   height: 0;
-  padding-bottom: 47.5%;
+  padding-bottom: 41.5%;
+  position: relative;
 }
 
 .main-container > article #title h1 {
@@ -178,7 +179,7 @@ blockquote:before{
   height: 75%;
   line-height: 14vh;
   color: white;
-  padding-top: 10%;
+  padding-top: 8%;
   padding-right: 3vw;
   letter-spacing: 0.5vw;
 }
@@ -191,12 +192,12 @@ blockquote:before{
 }
 
 .darkened {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 20px 10px;
 }
 
 .main-container > article #sub-title .darkened {
-  margin-top: 50px;
+  margin-top: 1%;
 }
 
 .main-container > article #author {
@@ -238,6 +239,16 @@ blockquote:before{
   margin-left: 8px;
   position: relative;
   top: 4px;
+}
+
+.main-container > article #intro {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 2%;
+  font-size: 1.5vw;
+  line-height: 5vh;
 }
 
 /* ==========================================================================
