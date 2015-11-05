@@ -241,14 +241,26 @@ blockquote:before{
   top: 4px;
 }
 
-.main-container > article #intro {
-  color: white;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 0 2%;
-  font-size: 1.5vw;
-  line-height: 5vh;
+.main-container > article #content {
+  width: 80%;
+  margin: auto;
+  color: #3c3c3e;
+  padding-top: 2vh;
+}
+
+.main-container > article #content #intro {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.main-container > article #content > div {
+  width: 70%;
+  float: left;
+}
+
+.main-container > article #content > aside {
+  width: 20%;
+  float: right;
 }
 
 /* ==========================================================================

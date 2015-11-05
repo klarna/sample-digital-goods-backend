@@ -13,31 +13,29 @@
       <span class="comments"><%= @article.comments %></span>
     </div>
   </div>
-
-  <span id="intro" class="darkened"><%= @article.intro %></span>
 </div>
 
-<div id="content">
-  <section id="summary">
-    <p><%= @article.summary %></p>
-  </section>
-  <section id="free_content">
-    <%= @article.free_content %>
-  </section>
-
-  <% if @user && @user.can_access_content %>
-    <section id="paid_content">
-      <%= @article.paid_content %>
+<div id="content" class="clearfix">
+  <div>
+    <section id="free_content">
+      <p id="intro"><%= @article.intro %></p>
+      <%= @article.free_content %>
     </section>
-  <% else %>
-    <%= erb :purchase_form %>
-  <% end %>
-</div>
-<aside>
-    <p>Other articles:</p>
-    <% @articles.each do |article| %>
-      <div>
-        <a href="/article/<%= article.id %>"><%= article.title %></a>
-      </div>
+
+    <% if @user && @user.can_access_content %>
+      <section id="paid_content">
+        <%= @article.paid_content %>
+      </section>
+    <% else %>
+      <%= erb :purchase_form %>
     <% end %>
-</aside>
+  </div>
+  <aside>
+      <p>Other articles:</p>
+      <% @articles.each do |article| %>
+        <div>
+          <a href="/article/<%= article.id %>"><%= article.title %></a>
+        </div>
+      <% end %>
+  </aside>
+</div>
