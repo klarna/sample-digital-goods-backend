@@ -183,6 +183,29 @@ blockquote:before{
   letter-spacing: 0.5vw;
 }
 
+.main-container > article #sub-title {
+  width: 80%;
+  margin: 15% auto 0 auto;
+  height: 20px;
+  padding-right: 3vw;
+}
+
+.darkened {
+  background-color: red;
+}
+
+.main-container > article #author {
+  float: left;
+  width: 10px;
+  height: 10px;
+}
+
+.main-container > article #social {
+  float: right;
+  width: 10px;
+  height: 10px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

@@ -1,5 +1,16 @@
 <div id="title" style="background: <%= @article.image %>; background-size: cover;">
   <h1><%= @article.title %></h1>
+  <div id="sub-title">
+    <div id="author" class="darkened">
+      <img src='/images/<%= @article.author.gsub(' ', '_') + '.png' %>'></img>
+      <div>
+        <span><%= @article.author %></span>
+        <span><%= @article.publish_date %></span>
+      </div>
+    </div>
+    <div id="social" class="darkened">
+    </div>
+  </div>
 </div>
 
 <div id="content">
