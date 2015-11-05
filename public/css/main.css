@@ -88,67 +88,6 @@ body {
   text-decoration: none;
 }
 
-/* ==============
-    MOBILE: Main
-   ============== */
-.main {
-  padding: 30px 0;
-}
-
-h3 {
-  font-family: 'Martel', serif;
-}
-
-article {
-  min-height: 500px;
-}
-
-h5 {
-  text-transform: uppercase;
-  font-size: 0.8em;
-  letter-spacing: 1px;
-  color: #777;
-}
-
-.main article h1 {
-  font-size: 2em;
-  line-height: 1.2em;
-  font-family: 'Martel', serif;
-  margin: 0;
-  font-weight: 900;
-}
-
-.main article h2 {
-  font-size: 1em;
-  line-height: 1.2em;
-  font-family: 'Martel', serif;
-
-  margin: 5px 0 20px 0;
-  color: #888;
-  font-weight: 100;
-}
-a {
-  color: #33f;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-
-.main article img {
-  width: 100%;
-}
-
-.main article section {
-  margin-top: 40px;
-}
-
-section#free_content p:first-line{
-  font-weight: bold;
-}
-
 blockquote {
   font-family: 'Martel', serif;
   color: #555;
@@ -163,17 +102,6 @@ blockquote:before{
   margin-left: -1em;
   font-size: 2em;
 
-}
-
-.main article p {
-  font-family: 'Martel', serif;
-  color: #333;
-  text-rendering: optimizelegibility;
-  margin-top: 0;
-}
-
-.main aside {
-  padding: 0px 5% 10px;
 }
 
 .footer-container footer {
@@ -232,53 +160,8 @@ blockquote:before{
   top: 3px;
 }
 
-.avatar{
-  width: 32px;
-  border-radius: 5px;
-}
-.read-count{
-  font-family: 'Martel', serif;
-  line-height: 32px;
-  padding: 15px;
-  display: inline-block;
-  color: #666;
-
-}
-nav {
-  font-family: 'Martel', serif;
-  line-height: 32px;
-  float: right;
-  padding: 15px 0;
-}
-
 #site_offer {
   max-width: 500px;
-}
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 768px) {
-
-/* ============
-    WIDE: Menu
-   ============ */
-
-
-/* ============
-    WIDE: Main
-   ============ */
-
-  .main article {
-    float: left;
-    width: 57%;
-  }
-
-  .main aside {
-    float: right;
-    width: 28%;
-  }
 }
 
 /* ==========================================================================
