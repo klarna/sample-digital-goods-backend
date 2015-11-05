@@ -1,5 +1,5 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans::400,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans::400,600,700,800,900);
 
 html {
   color: #333;
@@ -191,13 +191,26 @@ blockquote:before{
 }
 
 .darkened {
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px 10px;
 }
 
 .main-container > article #author {
   float: left;
-  width: 10px;
-  height: 10px;
+}
+
+.main-container > article #author img {
+  float: left;
+  margin-right: 10px;
+}
+
+.main-container > article #author span {
+  display: inline-block;
+  color: white;
+}
+
+.main-container > article #author #date {
+  font-weight: 900;
 }
 
 .main-container > article #social {

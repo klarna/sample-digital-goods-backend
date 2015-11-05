@@ -4,8 +4,8 @@
     <div id="author" class="darkened">
       <img src='/images/<%= @article.author.gsub(' ', '_') + '.png' %>'></img>
       <div>
-        <span><%= @article.author %></span>
-        <span><%= @article.publish_date %></span>
+        <span id="name"><%= @article.author %></span>
+        <span id="date"><%= @article.publish_date %></span>
       </div>
     </div>
     <div id="social" class="darkened">
