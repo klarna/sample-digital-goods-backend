@@ -1,5 +1,5 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans::400,600,700,800);
 
 html {
   color: #333;
@@ -162,6 +162,25 @@ blockquote:before{
 
 #site_offer {
   max-width: 500px;
+}
+
+.main-container > article #title {
+  width: 100%;
+  height: 0;
+  padding-bottom: 47.5%;
+}
+
+.main-container > article #title h1 {
+  margin: 0 auto;
+  font-size: 7vw;
+  font-weight: 800;
+  width: 80%;
+  height: 75%;
+  line-height: 14vh;
+  color: white;
+  padding-top: 10%;
+  padding-right: 3vw;
+  letter-spacing: 0.5vw;
 }
 
 /* ==========================================================================

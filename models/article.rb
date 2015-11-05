@@ -3,7 +3,7 @@ class Article
   ARTICLES = [
     {
       id: '1',
-      title: 'Winter is Coming Time to Go Hiking',
+      title: 'WINTER IS COMING TIME TO GO HIKING',
       summary: 'Kiteboarding is a surface water sport combining aspects of wakeboarding, windsurfing, surfing, paragliding, and gymnastics into one extreme sport',
       image: 'url(\'/images/take_a_hike.jpg\')',
       intro: 'Kiteboarding is a surface water sport combining aspects of wakeboarding, windsurfing, surfing, paragliding, and gymnastics into one extreme sport. A kiteboarder harnesses the power of the wind with a large controllable power kite to be propelled across the water on a kiteboard similar to a wakeboard or a small surfboard, with or without footstraps or bindings.Kitesurfing is a style of kiteboarding specific to wave riding, which utilizes standard surfboards or boards shaped specifically for the purpose.There are different styles of kiteboarding, including freestyle, freeride, downwinders, speed, course racing, wakestyle, jumping and kitesurfing in the waves.[1] In 2012, the number of kitesurfers was estimated by the ISAF and IKA at 1.5 million persons worldwide [2] (pending review). The global market for kite gear sales is worth US$321 million.[3]',
