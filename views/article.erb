@@ -22,12 +22,13 @@
       <%= @article.free_content %>
     </section>
 
-    <% if @user && @user.can_access_content %>
+    <% if @user && @user.can_access_content? %>
       <section id="paid_content">
         <%= @article.paid_content %>
       </section>
     <% else %>
       <%= erb :purchase_form %>
+      <section id="paid_content"></section>
     <% end %>
   </div>
   <aside>

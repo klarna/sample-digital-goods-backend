@@ -4,7 +4,7 @@ module Helpers
   end
 
   def locale
-    params[:locale] ? params[:locale] : "sv"
+    params[:locale] ? params[:locale] : "en"
   end
 
   def in_app

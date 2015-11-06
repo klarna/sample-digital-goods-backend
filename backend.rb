@@ -50,17 +50,17 @@ class Backend < Sinatra::Base
 
     purchase = Klarna::Purchase.new(
       user_token:    @user.token,
-      reference:     'subscription',
-      name:          'Monthly subscription',
-      amount:        99,
+      reference:     'article',
+      name:          'Single article purchase',
+      amount:        15,
       tax:           6,
       origin_proof:  params[:origin_proof]
     )
 
     authorization_response = purchase.authorize!
     if authorization_response.success?
-      @user.subscribe!
       article = Article.find(params[:article_id])
+      @user.read! article
       return json data: article.paid_content, klarna_response: authorization_response.data
     else
       status 500
