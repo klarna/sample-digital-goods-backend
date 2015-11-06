@@ -3,10 +3,10 @@ class RedirectTo < Sinatra::Base
 
   # Make purches and redirect to thank you page
   post '/purchase_and_redirect' do
-    @user = User.create(session, params[:userToken], 'user@email.com') unless @user
+    @user = User.create(session, 'user@email.com') unless @user
 
     purchase = Klarna::Purchase.new(
-      user_token:    @user.token,
+      user_token:    params[:userToken],
       reference:     'subscription',
       name:          'Monthly subscription',
       amount:        99,

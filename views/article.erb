@@ -22,7 +22,7 @@
       <%= @article.free_content %>
     </section>
 
-    <% if @user && @user.can_access_content? %>
+    <% if @user && @user.can_access_content?(@article) %>
       <section id="paid_content">
         <%= @article.paid_content %>
       </section>

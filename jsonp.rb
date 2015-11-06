@@ -8,7 +8,7 @@ class JSONP < Sinatra::Base
   get '/registration' do
     callback = params.delete('klarnaCallback')
 
-    @user = User.create(session, params[:userToken], 'user@email.com')
+    @user = User.create(session, 'user@email.com')
     article = Article.find(params[:article_id])
     @user.read!(article)
 
