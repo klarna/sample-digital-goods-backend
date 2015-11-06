@@ -209,6 +209,8 @@ blockquote:before{
 .main-container > article #author img {
   float: left;
   margin-right: 10px;
+  height: 50px;
+  width: 50px;
 }
 
 .main-container > article #author span {
