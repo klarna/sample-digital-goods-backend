@@ -31,11 +31,18 @@
     <% end %>
   </div>
   <aside>
-      <p>Other articles:</p>
-      <% @articles.each do |article| %>
+    <div class="related">
+      <p class="header">RELATED ARTICLES</p>
+      <% @article.related.each do |article| %>
         <div>
           <a href="/article/<%= article.id %>"><%= article.title %></a>
         </div>
       <% end %>
+    </div>
+    <div class="trending">
+      <p class="header">TRENDING</p>
+      <div>Did you know? Most links in sample sites are fake!</div>
+      <div>The benefits of owning a flamingo</div>
+    </div>
   </aside>
 </div>

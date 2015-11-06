@@ -182,6 +182,7 @@ blockquote:before{
   padding-top: 8%;
   padding-right: 3vw;
   letter-spacing: 0.5vw;
+  text-transform: uppercase;
 }
 
 .main-container > article #sub-title {
@@ -253,14 +254,52 @@ blockquote:before{
   font-size: 18px;
 }
 
+.main-container > article #content .excerpt {
+  font-style: italic;
+  font-size: 21px;
+  line-height: 35px;
+  color: #d40f7d;
+}
+
 .main-container > article #content > div {
   width: 70%;
   float: left;
 }
 
 .main-container > article #content > aside {
-  width: 20%;
+  width: 30%;
   float: right;
+  font-size: 12px;
+  position: relative;
+  left: 90px;
+}
+
+.main-container > article #content > aside > div {
+  padding-left: 30px;
+  border-left: 4px solid;
+}
+
+.main-container > article #content > aside .related {
+  border-color: #4fe3c1;
+}
+
+.main-container > article #content > aside .related a {
+  color: #9e9ea0;
+  text-decoration: none;
+}
+
+.main-container > article #content > aside .trending {
+  margin-top: 30px;
+  border-color: #f5a623;
+}
+
+.main-container > article #content > aside .trending div {
+  color: #9e9ea0;
+}
+
+
+.main-container > article #content > aside .header {
+  font-weight: 600;
 }
 
 /* ==========================================================================
