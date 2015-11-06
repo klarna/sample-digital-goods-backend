@@ -36,7 +36,7 @@ class Backend < Sinatra::Base
   post '/registration' do
     @user = User.create(session, params[:userToken], 'user@email.com')
     article = Article.find(params[:article_id])
-    @user.read!(article)
+    @user.subscribe!(article)
 
     return json data: article.paid_content
   end
