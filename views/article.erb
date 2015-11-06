@@ -2,7 +2,7 @@
   <h1><%= @article.title %></h1>
   <div id="sub-title">
     <div id="author" class="darkened">
-      <img src='/images/<%= @article.author.gsub(' ', '_') + '.png' %>'></img>
+      <img src='/images/<%= @article.author.gsub(' ', '_').downcase + '.png' %>'></img>
       <div>
         <span id="name"><%= @article.author %></span>
         <span id="date"><%= @article.publish_date %></span>
