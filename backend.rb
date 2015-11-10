@@ -60,7 +60,7 @@ class Backend < Sinatra::Base
     if success
       @user.subscribe!
       article = Article.find(params[:article_id])
-      return json data: article.paid_content
+      return json data: article.paid_content, klarna_response: response_data
     else
       status response_code and return json data: {}, klarna_response: response_data
     end

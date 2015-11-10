@@ -31,7 +31,7 @@ module Klarna
       resource = RestClient::Resource.new(*resource_params)
 
       resource.post(order_params) do |response|
-        success = response.code.to_s =~ /^2/
+        success = response.code < 300
         [success, success ? response.body : JSON.parse(response.body), response.code]
       end
     end
