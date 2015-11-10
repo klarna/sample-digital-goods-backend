@@ -14,15 +14,14 @@ class RedirectTo < Sinatra::Base
       origin_proof:  params[:origin_proof]
     )
 
-    authorization_response = purchase.authorize!
-    if authorization_response.success?
+    success, response_data, response_code = purchase.order!
+    if success
       @user.subscribe!
 
-      user_token, order_reference = extract_user_token_and_order_reference(authorization_response.data[1...-1])
+      user_token, order_reference = extract_user_token_and_order_reference(response_data[1...-1])
       return json redirect_to: "/thank_you?user_token=#{user_token}&order_reference=#{order_reference}"
     else
-      status 500
-      return json klarna_response: authorization_response.data
+      status response_code and return json data: {}, klarna_response: response_data
     end
   end
 
