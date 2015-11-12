@@ -9,8 +9,8 @@ class RedirectTo < Sinatra::Base
       user_token:    @user.token,
       reference:     'subscription',
       name:          'Monthly subscription',
-      amount:        99,
-      tax:           6,
+      amount:        4900,
+      tax:           600,
       origin_proof:  params[:origin_proof]
     )
 
